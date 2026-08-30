@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Search, Pencil, Users2, Plane, Share2, Coins } from "lucide-react";
+import { Search, Pencil, Users2, Plane, Share2, Coins, PlaneIcon } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/shared/ScrollReveal";
 
@@ -9,32 +9,27 @@ const steps = [
   {
     icon: Search,
     title: "Discover",
-    desc: "Explore millions of creator-curated itineraries and hidden gems.",
+    desc: "Explore locations and add them to Talery.",
   },
   {
     icon: Pencil,
     title: "Customize",
-    desc: "Use AI to adapt any itinerary to your budget, dates, and style.",
+    desc: "Use AI to adapt any itinerary to your budget, dates and style.",
   },
   {
     icon: Users2,
     title: "Collaborate",
-    desc: "Invite friends, split costs, and plan together in real time.",
+    desc: "Invite friends, split costs, and plan together",
   },
   {
-    icon: Plane,
+    icon: PlaneIcon,
     title: "Travel",
-    desc: "Book everything you need and access your trip on any device.",
+    desc: "Visit all locations using Talery's live trip features",
   },
   {
     icon: Share2,
     title: "Share",
-    desc: "Publish your journey and inspire others to explore.",
-  },
-  {
-    icon: Coins,
-    title: "Earn",
-    desc: "Monetize your itineraries, guides, and group trips.",
+    desc: "Share your experience and inspire others to explore.",
   },
 ];
 

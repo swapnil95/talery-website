@@ -3,8 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
 import { Navbar } from "@/components/shared/Navbar";
-import { Footer } from "@/components/shared/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -90,7 +90,18 @@ export default function RootLayout({
         <ThemeProvider>
           <Navbar />
           <div className="flex-1">{children}</div>
-          <Footer />
+          <footer className="border-t border-border py-6">
+            <div className="container-padding">
+              <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-muted-foreground">
+                <p>© {new Date().getFullYear()} Talery Inc. All rights reserved.</p>
+                <div className="flex items-center gap-4">
+                  <Link href="/legal/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
+                  <Link href="/legal/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
+                  <Link href="/legal/support" className="hover:text-foreground transition-colors">Support</Link>
+                </div>
+              </div>
+            </div>
+          </footer>
           <Toaster position="bottom-right" />
         </ThemeProvider>
       </body>
