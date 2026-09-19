@@ -1,32 +1,15 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  Sparkles,
-  CloudSun,
-  Backpack,
-  PiggyBank,
-  Utensils,
-  Gem,
-  ShieldAlert,
-  Languages,
-  Clock,
-  Route,
-} from "lucide-react";
+import { Sparkles, Utensils, Clock, Route } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/shared/ScrollReveal";
 
 const aiFeatures = [
-  { icon: Sparkles, title: "AI itinerary generation", desc: "Full day-by-day plans from a single sentence." },
-  { icon: CloudSun, title: "Weather suggestions", desc: "Activities adapt to the forecast automatically." },
-  { icon: Backpack, title: "Packing assistant", desc: "Smart packing lists for every destination." },
-  { icon: PiggyBank, title: "Budget optimization", desc: "Maximize experiences within your spend." },
-  { icon: Utensils, title: "Food recommendations", desc: "Local flavors matched to your dietary preferences." },
-  { icon: Gem, title: "Hidden gems", desc: "Discover places only locals know about." },
-  { icon: ShieldAlert, title: "Emergency assistance", desc: "Instant help, contacts, and safety tips." },
-  { icon: Languages, title: "Language help", desc: "Translate phrases and learn local etiquette." },
-  { icon: Clock, title: "Smart scheduling", desc: "Optimal timing for attractions and transit." },
-  { icon: Route, title: "Trip optimization", desc: "Reduce travel time and maximize enjoyment." },
+  { icon: Sparkles, title: "Itinerary drafts", desc: "Turn saved places and preferences into a day-by-day plan." },
+  { icon: Utensils, title: "Meal stops", desc: "Work restaurant options into your sightseeing schedule." },
+  { icon: Clock, title: "Travel pace", desc: "Refine your plan around the time you want to spend exploring." },
+  { icon: Route, title: "Plan together with AI", desc: "Discuss changes and review suggestions before relying on them." },
 ];
 
 export function AIFeatures() {
@@ -40,15 +23,15 @@ export function AIFeatures() {
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
             Your Personal AI{" "}
-            <span className="gradient-text">Travel Agent</span>
+            <span className="gradient-text">Planning Assistant</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Plan like a pro without the pro price tag. Talery&apos;s AI
-            anticipates what you need before you ask.
+            Start with your places and preferences, then refine your itinerary.
+            Check opening hours, routes, and availability before you travel.
           </p>
         </ScrollReveal>
 
-        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
+        <StaggerContainer className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {aiFeatures.map((feature) => (
             <StaggerItem key={feature.title}>
               <motion.div

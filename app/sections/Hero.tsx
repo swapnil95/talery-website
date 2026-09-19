@@ -148,7 +148,7 @@ export function Hero() {
           >
             <Button size="lg" className="w-full sm:w-auto group" asChild>
               <Link href="/#waitlist">
-                Start Exploring
+                Request Early Access
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
@@ -160,16 +160,6 @@ export function Hero() {
             >
               <Link href="/#waitlist">Join Waitlist</Link>
             </Button>
-            <Button
-              size="lg"
-              variant="ghost"
-              className="w-full sm:w-auto group"
-            >
-              <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary mr-2 group-hover:bg-primary/20 transition-colors">
-                <Play className="h-4 w-4 fill-current" />
-              </span>
-              Watch Demo
-            </Button>
           </motion.div>
 
           {/* Floating UI Preview */}
@@ -179,6 +169,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.5 }}
             className="relative mx-auto max-w-4xl"
           >
+            <p className="mb-3 text-sm text-muted-foreground">Product preview · illustrative trip and activity data</p>
             <div className="relative rounded-3xl glass-strong p-2 shadow-2xl">
               <div className="absolute -top-6 -left-6 hidden lg:flex items-center gap-3 glass-strong px-4 py-3 rounded-2xl shadow-xl animate-float">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-teal-100 dark:bg-teal-900/50 text-teal-600 dark:text-teal-300">
@@ -210,8 +201,8 @@ export function Hero() {
                       color: "bg-sky-100 dark:bg-sky-900/30 text-sky-600 dark:text-sky-300",
                     },
                     {
-                      title: "Budget Pool",
-                      desc: "$4,250 collected",
+                      title: "Trip Budget",
+                      desc: "$4,250 recorded",
                       icon: Plane,
                       color: "bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-300",
                     },
@@ -257,9 +248,7 @@ export function Hero() {
                       8 creators • 24 travelers
                     </p>
                   </div>
-                  <Button size="sm" variant="secondary">
-                    Join
-                  </Button>
+                  <span className="rounded-lg bg-secondary/10 px-3 py-2 text-xs font-medium">Trip preview</span>
                 </div>
               </div>
             </div>

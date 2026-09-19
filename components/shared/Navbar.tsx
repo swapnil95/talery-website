@@ -71,7 +71,7 @@ export function Navbar() {
                 </AnimatePresence>
               </button>
               <Button size="sm" asChild>
-                <Link href="#waitlist">Join Waitlist</Link>
+                <Link href="/#waitlist">Join Waitlist</Link>
               </Button>
             </div>
           </div>

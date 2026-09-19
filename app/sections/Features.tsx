@@ -2,40 +2,20 @@
 
 import { motion } from "framer-motion";
 import {
-  Sparkles,
-  Store,
-  Users,
-  Wallet,
-  Map,
-  Lightbulb,
-  BookOpen,
-  Rss,
-  Download,
-  CalendarCheck,
-  MessageCircle,
-  CircleDollarSign,
-  Share2,
-  Plane,
+  Sparkles, Users, Wallet, Map, BookOpen, Download, CalendarCheck, Share2,
 } from "lucide-react";
 import { Container } from "@/components/shared/Container";
 import { ScrollReveal, StaggerContainer, StaggerItem } from "@/components/shared/ScrollReveal";
 
 const features = [
-  { icon: Sparkles, title: "AI Trip Planner", desc: "Generate complete itineraries in seconds from any prompt." },
-  { icon: Store, title: "Creator Marketplace", desc: "Buy, sell, and discover curated travel guides." },
-  { icon: Users, title: "Collaborative Planning", desc: "Build trips together with friends in real time." },
-  { icon: Wallet, title: "Budget Pooling", desc: "Collect, split, and track group trip expenses." },
-  { icon: Map, title: "Real-time Maps", desc: "Interactive maps with live routes and locations." },
-  { icon: Lightbulb, title: "Smart Recommendations", desc: "Personalized suggestions based on your taste." },
-  { icon: BookOpen, title: "Travel Journal", desc: "Document every moment with photos and stories." },
-  { icon: Rss, title: "Social Feed", desc: "Follow creators and explore trending trips." },
-  { icon: Download, title: "Offline Itinerary", desc: "Access your plans without internet." },
-  { icon: CalendarCheck, title: "Booking Integrations", desc: "Book hotels, activities, and transport in one place." },
-  { icon: MessageCircle, title: "Travel Communities", desc: "Join groups for every destination and interest." },
-  { icon: Plane, title: "Group Trips", desc: "Join influencer-led adventures around the world." },
-  { icon: Sparkles, title: "AI Chat", desc: "Ask anything about your destination." },
-  { icon: CircleDollarSign, title: "Creator Earnings", desc: "Monetize your travel knowledge effortlessly." },
-  { icon: Share2, title: "Trip Sharing", desc: "Share beautiful itineraries with one link." },
+  { icon: Sparkles, title: "AI Trip Planner", desc: "Build and refine itineraries around your saved places and preferences." },
+  { icon: Users, title: "Shared Trips", desc: "Invite travel companions and give each person a role in your trip." },
+  { icon: Wallet, title: "Shared Expenses", desc: "Record expenses, split costs, and track settlements made outside Talery." },
+  { icon: Map, title: "Maps and Places", desc: "Find destinations and keep your saved stops together on a map." },
+  { icon: BookOpen, title: "Trip Media", desc: "Keep selected photos, documents, and notes with your travel plans." },
+  { icon: Download, title: "Itinerary Export", desc: "Export a PDF copy of your itinerary to take with you." },
+  { icon: CalendarCheck, title: "Group Decisions", desc: "Use trip polls to help your group choose places to visit." },
+  { icon: Share2, title: "Trip Sharing", desc: "Invite others to collaborate and choose whether to make a trip public." },
 ];
 
 export function Features() {
@@ -51,8 +31,8 @@ export function Features() {
             <span className="gradient-text">Travel Smarter</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            From AI-powered planning to creator monetization — Talery is the
-            all-in-one platform for modern travelers.
+            Bring your plans, saved places, travel companions, and shared expenses
+            together. Availability may vary during early access.
           </p>
         </ScrollReveal>
 

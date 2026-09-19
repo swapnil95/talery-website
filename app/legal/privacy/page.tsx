@@ -1,202 +1,118 @@
 import type { Metadata } from "next";
-import {
-  Shield,
-  Lock,
-  FileText,
-  Globe,
-  Mail,
-  UserCheck,
-  Cookie,
-  Server,
-  Baby,
-} from "lucide-react";
-import { Container } from "@/components/shared/Container";
-import { PageHeader } from "@/components/shared/PageHeader";
-import { ScrollReveal } from "@/components/shared/ScrollReveal";
-import { Card, CardContent } from "@/components/ui/card";
+import { LegalDocument, type LegalSection } from "@/components/shared/LegalDocument";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
-  description:
-    "Talery's Privacy Policy explains how we collect, use, share, and protect your personal information when you use our AI-powered social travel platform.",
+  "title": "Privacy Policy",
+  "description": "How Talery handles account details, shared trips, expenses, uploads, AI requests, and technical information, and how to contact us about your data.",
+  "alternates": {
+    "canonical": "/legal/privacy/"
+  }
 };
 
-const sections = [
+// See APPLE_READINESS_REVIEW.md for facts requiring owner confirmation before publication.
+const sections: LegalSection[] = [
   {
-    icon: Shield,
-    title: "1. Introduction",
-    content: [
-      "Talery Inc. (\"Talery,\" \"we,\" \"us,\" or \"our\") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, share, and safeguard your information when you use our website, mobile applications, and services (collectively, the \"Services\").",
-      "By accessing or using Talery, you agree to the practices described in this Privacy Policy. If you do not agree, please do not use our Services.",
-    ],
+    "id": "scope",
+    "title": "What this policy covers",
+    "paragraphs": [
+      "Talery is a social travel planning service for discovering places, building itineraries, collaborating on trips, and recording shared expenses. This policy covers personal information handled through the Talery website and app, including optional AI planning and place-import features. Talery is operated by Talery Private Limited. References to Talery, we, and us in this policy mean Talery Private Limited.",
+      "The information involved depends on the features you use. Browsing the marketing website does not create an app account. This notice explains data practices; reading it or using the website is not consent to every kind of processing. Device permissions and consent required for a particular feature are separate choices."
+    ]
   },
   {
-    icon: FileText,
-    title: "2. Information We Collect",
-    content: [
-      "Account Information: name, email address, phone number, username, password, profile photo, and biography.",
-      "Travel Data: itineraries, destinations, bookings, preferences, travel history, and trip-related content.",
-      "Usage Data: IP address, device type, browser type, operating system, pages visited, and interactions with our Services.",
-      "Location Data: with your consent, we may collect precise or approximate location data to enhance travel recommendations.",
-      "Payment Information: billing address and payment method details processed by secure third-party payment providers.",
-      "Communications: messages, support requests, and feedback you send to us or other users.",
-      "AI Interactions: prompts, queries, and outputs generated through Talery's AI travel planning features.",
-    ],
+    "id": "information",
+    "title": "Information you provide and create",
+    "paragraphs": [
+      "Account and profile: when you sign in with Google, Talery receives information used to identify your account, including your name, email address, and profile photograph. We keep an account identifier and authentication records. You can also upload a profile picture. Talery does not receive your Google password.",
+      "Travel plans: trip names, dates, destinations, saved places and collections, itinerary schedules, notes, links, preferences, membership roles, invitations, polls, and votes. Place coordinates describe places in your plans; they do not by themselves establish your current device location.",
+      "Uploads: profile and trip photos, trip media, documents you select, receipt images, associated file information, and member tags you add. Files can contain information about you or other travelers. Only upload material you are entitled to share, and avoid unnecessary identification, financial, or health information.",
+      "Shared expenses: budget names, currencies, amounts, expense descriptions and dates, payers, participants, splits, contribution and settlement records, notes, and receipts. These are records entered for group expense management; recording a payment does not itself process a bank or card transaction.",
+      "Social and support information: follow relationships and requests, invitation recipient email addresses, and messages you send to Talery for support, early access, or privacy requests. We also receive information about you when another traveler invites you or includes you in a shared trip or expense."
+    ]
   },
   {
-    icon: Lock,
-    title: "3. How We Use Your Information",
-    content: [
-      "To provide, maintain, and improve the Talery platform and AI-powered travel planning tools.",
-      "To personalize recommendations, itineraries, and community content based on your preferences.",
-      "To process transactions, subscriptions, and creator payouts.",
-      "To communicate with you about updates, security alerts, support, and marketing (with your consent where required).",
-      "To ensure safety, security, and compliance with our Terms of Service and legal obligations.",
-      "To analyze usage trends, train and improve our AI models, and conduct research in aggregated or de-identified form.",
-    ],
+    "id": "ai",
+    "title": "AI planning and importing social links",
+    "paragraphs": [
+      "Talery uses OpenAI to generate and revise travel plans. Requests can include your messages, recent conversation history and summaries, trip name and dates, cities, saved places and their notes, planning preferences, and results returned by planning tools. Talery stores AI conversations and generated responses with the account and, where applicable, the trip.",
+      "When you ask Talery to find a place from an Instagram link, the submitted URL is sent to Bright Data to retrieve the post. The post description and available location hints or coordinates are sent to OpenAI to identify the place. The resulting place query and coordinates can then be sent to Google Places. These are third-party services even when the interaction happens inside Talery.",
+      "Do not include passwords, identity documents, payment details, or sensitive information about yourself or other people in AI messages, trip notes used for AI planning, or imported links. Dietary or accessibility preferences may reveal sensitive information, so share only what is necessary. You can plan manually without submitting an AI request or importing a social link.",
+      "AI processing is used to respond to your request. This notice does not grant permission to use your personal content for unrelated model training. Provider processing and retention also depend on the applicable service agreements and configuration; contact us if you need details before submitting personal information."
+    ]
   },
   {
-    icon: Globe,
-    title: "4. Sharing Your Information",
-    content: [
-      "Service Providers: we share data with trusted vendors who help us host, analyze, pay, secure, and support our Services.",
-      "Travel Partners: with your consent, we may share booking or itinerary details with airlines, hotels, experience providers, or insurers.",
-      "Other Users: profile information and public travel content may be visible to other Talery users based on your privacy settings.",
-      "Legal Compliance: we may disclose information if required by law, regulation, legal process, or to protect rights and safety.",
-      "Business Transfers: in the event of a merger, acquisition, or sale of assets, your information may be transferred as part of that transaction.",
-      "We do not sell your personal information to third parties for monetary consideration.",
-    ],
+    "id": "technical-data",
+    "title": "Technical information and storage",
+    "paragraphs": [
+      "Network requests expose technical information such as an IP address, request time, and browser or device information to servers delivering the service. Operational logs may record requests and errors for troubleshooting and security.",
+      "If you allow notifications, the app obtains a device or push token to address notifications to your installation. Android notifications use Firebase Cloud Messaging; the iOS app uses Expo token registration. Notification content can include trip invitations, activity, or expense information and may appear on your lock screen depending on your device settings.",
+      "The marketing website stores your selected appearance in browser local storage under talery-theme. You can remove it through browser site-data controls. The app stores authentication tokens using device secure storage and keeps local preferences and cached application data. Clearing local storage or uninstalling the app does not delete information held by Talery or its providers.",
+      "The marketing website does not include advertising pixels or an analytics cookie integration in its current implementation. We will update this notice and provide any legally required choices before introducing additional tracking."
+    ]
   },
   {
-    icon: Cookie,
-    title: "5. Cookies and Tracking Technologies",
-    content: [
-      "Talery uses cookies, web beacons, pixels, and similar technologies to operate and improve our Services.",
-      "Essential cookies are required for core functionality such as authentication and security.",
-      "Analytics and performance cookies help us understand how users interact with Talery.",
-      "Advertising and personalization cookies enable relevant recommendations and marketing campaigns.",
-      "You can manage cookie preferences through your browser settings or our cookie consent tool.",
-    ],
+    "id": "purposes",
+    "title": "Why we use information",
+    "paragraphs": [
+      "We use account and travel information to authenticate you, save and display your plans, manage shared-trip access, record expenses, deliver invitations and notifications, and provide features you request. We use support messages to respond to you and technical records to investigate faults, prevent misuse, and protect the service.",
+      "Where European Economic Area or UK data protection law applies, processing necessary to provide requested account and planning services is based on performing our contract with you. Responding to general enquiries and maintaining a reliable, secure service are legitimate interests, subject to your rights. Processing required by law relies on the relevant legal obligation. Where consent is required, including for applicable optional sharing or marketing, it must be obtained separately. You may withdraw consent without affecting the lawfulness of earlier processing.",
+      "An early-access request is used to respond about access to Talery. It does not authorize unrelated promotional messages. You can ask us to stop early-access or marketing communications at any time. Service messages needed for an account or an active request are handled separately."
+    ]
   },
   {
-    icon: UserCheck,
-    title: "6. Your Rights (GDPR, CCPA, and Others)",
-    content: [
-      "Access: request a copy of the personal data we hold about you.",
-      "Correction: request that we correct inaccurate or incomplete information.",
-      "Deletion: request deletion of your personal data, subject to legal exceptions.",
-      "Portability: receive your data in a structured, commonly used format.",
-      "Restriction and Objection: ask us to limit or stop certain processing activities.",
-      "Opt-Out: unsubscribe from marketing emails and opt out of certain data sales or sharing under applicable laws.",
-      "To exercise your rights, contact us at legal@talery.co or use the settings available in your account.",
-    ],
+    "id": "visibility",
+    "title": "What other people can see",
+    "paragraphs": [
+      "Trip members can access information made available to their role, which may include itineraries, uploads, polls, and shared expense records. Making a trip public or sharing an invitation or exported itinerary can make information available beyond your original group. Check recipients and contents before sharing.",
+      "Profiles and follow features expose information to other users. In the current app implementation, a signed-in user viewing another user's profile overview can receive that user's name, email address, profile photo, and travel and follow counts. Do not assume your account email is private from other signed-in users.",
+      "Other people may retain screenshots, downloaded files, exported plans, or copies of information already shared with them. Removing information from Talery cannot recall those independent copies. Contact us if someone shares your information without permission."
+    ]
   },
   {
-    icon: Server,
-    title: "7. Data Retention and Security",
-    content: [
-      "We retain personal information for as long as necessary to fulfill the purposes described in this policy, unless a longer retention period is required by law.",
-      "We implement industry-standard technical and organizational measures to protect your data, including encryption in transit and at rest, access controls, and regular security assessments.",
-      "No method of transmission or storage is completely secure, and we cannot guarantee absolute security.",
-    ],
+    "id": "providers",
+    "title": "Service providers and other disclosures",
+    "paragraphs": [
+      "Google supports sign-in and place lookups. Mapbox provides maps and place search and receives requests such as search text and map or place coordinates, along with technical request information. Cloudflare R2 stores uploaded files. OpenAI and Bright Data process the feature-specific information described above. Resend delivers email invitations and receives recipient addresses and message contents. Firebase and Expo support notification features.",
+      "Hosting, database, and support infrastructure also process information needed to operate Talery. Providers receive information according to the features involved; not every provider receives all account or trip data. External services you visit through links have their own privacy practices.",
+      "Information may be disclosed when a valid legal requirement demands it, when reasonably necessary to investigate abuse or protect rights and safety, or as part of a business reorganization or transfer subject to applicable privacy obligations. We do not offer personal information for sale or use it for cross-service targeted advertising in the features described here."
+    ]
   },
   {
-    icon: Baby,
-    title: "8. Children's Privacy",
-    content: [
-      "Talery is not directed to children under the age of 13, and we do not knowingly collect personal information from children under 13.",
-      "If we learn that we have collected information from a child under 13 without parental consent, we will delete it promptly.",
-      "Users between 13 and the age of majority must use Talery under the supervision of a parent or legal guardian.",
-    ],
+    "id": "retention",
+    "title": "Retention and deletion requests",
+    "paragraphs": [
+      "Account records, saved trips, uploaded files, and AI conversations are kept to support your continuing use of those features. Support correspondence is kept to handle the enquiry and related follow-up. Operational logs serve troubleshooting and security purposes. Retention depends on whether the record is still needed for its purpose, an unresolved issue, or a legal obligation; information should not be kept indefinitely merely because storage is available.",
+      "To request access, correction, or deletion, email hr@talery.co, preferably from the email associated with your account, and describe your request. We may ask for proportionate information to verify account ownership. Do not send a password. Signing out, revoking Google access, or uninstalling Talery does not delete your Talery account.",
+      "Deletion may require handling account records, shared-trip associations, uploaded files, AI history, notification tokens, and provider-held records separately. Limited records may need to be retained to meet a legal obligation or resolve a dispute. Backups and independent copies already shared with other people can have different lifecycles. We will explain applicable exceptions and the status of your request rather than treating account deactivation as deletion."
+    ]
   },
   {
-    icon: Globe,
-    title: "9. International Transfers",
-    content: [
-      "Talery is based in the United States. Your information may be transferred to, stored, and processed in the United States or other countries where our service providers operate.",
-      "When transferring personal data from the European Economic Area, United Kingdom, or other jurisdictions, we rely on appropriate safeguards such as Standard Contractual Clauses.",
-    ],
+    "id": "choices",
+    "title": "Your choices and privacy rights",
+    "paragraphs": [
+      "You can decline photo-library or notification permissions and later change them through device settings. Use the file picker to select what you share, review trip visibility and membership, and avoid optional AI requests if you do not want their contents sent to the AI provider. Some features need the relevant information to work.",
+      "Depending on the law that applies to you, you may have rights to access, correct, delete, or receive a portable copy of personal information, restrict processing, object to processing based on legitimate interests, withdraw consent, and complain to a data protection authority. These rights are subject to applicable conditions and exceptions. Contact hr@talery.co to exercise them; we will respond within the period required by applicable law.",
+      "Where applicable, you may use an authorized agent and exercise rights concerning sale, sharing, or targeted advertising without unlawful discrimination. We do not describe every regional right as universally applicable. If we cannot fulfill a request, we will explain the reason and any available review or complaint route."
+    ]
   },
+  {
+    "id": "international-security",
+    "title": "International processing and security",
+    "paragraphs": [
+      "Talery's providers operate internationally, so information may be processed outside the country where you live. Applicable transfer requirements depend on the locations and providers involved. Where required, transfers need a valid legal mechanism, such as an adequacy decision or appropriate contractual safeguards. Contact us for information about the safeguards applicable to your data.",
+      "Access permissions, authentication, and controlled file access help protect information, but no online service or transmission is completely secure. Avoid sharing invitation links or account credentials with unintended recipients. Report suspected unauthorized access promptly. We do not claim a security certification or guarantee that all risks can be eliminated."
+    ]
+  },
+  {
+    "id": "children-changes",
+    "title": "Children and policy updates",
+    "paragraphs": [
+      "Talery is not intended for children under 13. Users who are not legally able to agree to the service terms in their country need permission from a parent or guardian. A higher local minimum age or consent requirement still applies. Talery does not currently verify user ages. If you believe a child has provided information contrary to these requirements, contact us so we can investigate and address it.",
+      "We will update this policy as features and data practices change and revise the date above. Material changes will be communicated through an appropriate service notice. Where a new use requires consent, publishing a revised policy alone will not replace that consent."
+    ]
+  }
 ];
 
 export default function PrivacyPage() {
-  return (
-    <main className="min-h-screen pb-20">
-      <PageHeader
-        badge="Legal"
-        title="Privacy Policy"
-        subtitle="How Talery collects, uses, and protects your personal information."
-      />
-
-      <section className="pt-16 md:pt-24">
-        <Container className="max-w-4xl">
-          <ScrollReveal>
-            <p className="text-sm text-muted-foreground mb-10">
-              Last updated: July 14, 2026
-            </p>
-          </ScrollReveal>
-
-          <div className="space-y-8">
-            {sections.map((section, index) => (
-              <ScrollReveal key={section.title} delay={index * 0.05}>
-                <Card className="glass-card border-primary/10">
-                  <CardContent className="p-6 md:p-8">
-                    <div className="flex items-start gap-4">
-                      <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                        <section.icon className="h-5 w-5" />
-                      </div>
-                      <div className="space-y-4">
-                        <h2 className="text-xl font-bold tracking-tight">
-                          {section.title}
-                        </h2>
-                        <ul className="space-y-3 text-muted-foreground leading-relaxed">
-                          {section.content.map((item, i) => (
-                            <li key={i} className="flex gap-3">
-                              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-primary" />
-                              <span>{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                  </CardContent>
-                </Card>
-              </ScrollReveal>
-            ))}
-          </div>
-
-          <ScrollReveal delay={0.3}>
-            <Card className="mt-8 glass-card border-secondary/10">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-start gap-4">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-secondary/10 text-teal-500">
-                    <Mail className="h-5 w-5" />
-                  </div>
-                  <div>
-                    <h2 className="text-xl font-bold tracking-tight mb-3">
-                      10. Changes and Contact
-                    </h2>
-                    <div className="space-y-3 text-muted-foreground leading-relaxed">
-                      <p>
-                        We may update this Privacy Policy from time to time. We will notify you of material changes by posting the updated policy on Talery and updating the effective date.
-                      </p>
-                      <p>
-                        If you have questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:
-                      </p>
-                      <ul className="space-y-1 pl-4">
-                        <li>Email: legal@talery.co</li>
-                        <li>Talery Inc.</li>
-                        <li>123 Market Street</li>
-                        <li>San Francisco, CA 94105, USA</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </ScrollReveal>
-        </Container>
-      </section>
-    </main>
-  );
+  return <LegalDocument title="Privacy Policy" subtitle="How information moves through Talery, who receives it, and your privacy choices." sections={sections} />;
 }

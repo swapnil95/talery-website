@@ -71,7 +71,6 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
   },
 };
 
@@ -93,11 +92,19 @@ export default function RootLayout({
           <footer className="border-t border-border py-6">
             <div className="container-padding">
               <div className="mx-auto max-w-7xl flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-muted-foreground">
-                <p>© {new Date().getFullYear()} Talery Inc. All rights reserved.</p>
-                <div className="flex items-center gap-4">
+                <div className="space-y-2 text-center sm:text-left">
+                  <p>© {new Date().getFullYear()} Talery Private Limited. All rights reserved.</p>
+                  <p>CIN: U52290DL2026PTC466558</p>
+                  <address className="max-w-xl not-italic leading-relaxed">
+                    Registered office: FL. NO. A3 U/G/F BACK SIDE, Property no. 220 KHNO 603,
+                    Sangam Vihar, Delhi 110080, India
+                  </address>
+                  <a href="mailto:hr@talery.co" className="inline-block hover:text-foreground transition-colors">hr@talery.co</a>
+                </div>
+                <div className="flex flex-wrap items-center justify-center gap-4">
                   <Link href="/legal/privacy" className="hover:text-foreground transition-colors">Privacy Policy</Link>
-                  <Link href="/legal/terms" className="hover:text-foreground transition-colors">Terms of Service</Link>
-                  <Link href="/legal/support" className="hover:text-foreground transition-colors">Support</Link>
+                  <Link href="/legal/terms" className="hover:text-foreground transition-colors">Terms and Conditions</Link>
+                  <a href="mailto:hr@talery.co" className="hover:text-foreground transition-colors">Support</a>
                 </div>
               </div>
             </div>
