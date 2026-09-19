@@ -9,7 +9,7 @@ import { WaitlistCTA } from "@/app/sections/WaitlistCTA";
 export const metadata: Metadata = {
   title: { absolute: "Talery — AI-Powered Social Travel Platform" },
   description:
-    "Discover Talery, an AI-powered social travel platform for planning and sharing trips. Explore the product and join the early access waitlist.",
+    "Talery Private Limited is developing a social travel planning app. Explore planned features and contact us about future early access.",
   alternates: { canonical: "/" },
 };
 

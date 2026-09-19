@@ -114,7 +114,7 @@ export function Hero() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium text-foreground/80 mb-8"
           >
             <Sparkles className="h-4 w-4 text-primary" />
-            <span>Now in early access</span>
+            <span>In development · coming soon</span>
             <span className="w-1.5 h-1.5 rounded-full bg-teal-500 animate-pulse" />
           </motion.div>
 
@@ -136,8 +136,9 @@ export function Hero() {
             transition={{ duration: 0.7, delay: 0.2 }}
             className="text-lg sm:text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed"
           >
-            Discover, create and share unforgettable travel experiences powered
-            by AI and a global community.
+            Talery Private Limited is building a social travel planning app to help
+            you discover places, plan together, and keep shared trips organized.
+            The app is not yet available; explore what we are working on.
           </motion.p>
 
           <motion.div
@@ -148,7 +149,7 @@ export function Hero() {
           >
             <Button size="lg" className="w-full sm:w-auto group" asChild>
               <Link href="/#waitlist">
-                Request Early Access
+                Register Your Interest
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
@@ -158,7 +159,7 @@ export function Hero() {
               className="w-full sm:w-auto"
               asChild
             >
-              <Link href="/#waitlist">Join Waitlist</Link>
+              <Link href="/#waitlist">Contact Us</Link>
             </Button>
           </motion.div>
 

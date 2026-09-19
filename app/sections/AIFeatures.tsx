@@ -19,15 +19,15 @@ export function AIFeatures() {
       <Container className="relative z-10">
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            AI Superpowers
+            AI planning preview
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
             Your Personal AI{" "}
             <span className="gradient-text">Planning Assistant</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Start with your places and preferences, then refine your itinerary.
-            Check opening hours, routes, and availability before you travel.
+            We are developing AI tools to turn your places and preferences into
+            an itinerary you can review and refine. The app is not yet available.
           </p>
         </ScrollReveal>
 

@@ -1,20 +1,16 @@
 # Talery
 
-A premium, world-class marketing website for **Talery** — an AI-powered social travel platform where creators, influencers, local experts, and travelers discover, create, share, and monetize travel itineraries.
+The prelaunch company website for **Talery Private Limited**, which is developing a social travel planning app.
 
-## Overview
+## Public website
 
-This is a production-ready Next.js website featuring:
+The deployment includes the homepage, Privacy Policy, and Terms and Conditions. Company disclosures and working contact links appear in the shared footer. All other page source files are retained for future use and excluded from the public build output.
 
-- Premium homepage with 14 immersive sections
-- 18+ internal marketing pages
-- 15 legal/policy pages
-- Dark mode support
-- Responsive mobile-first design
-- Smooth Framer Motion animations
-- Glassmorphism and modern gradients
-- SEO metadata, sitemap, and robots.txt
-- WCAG 2.2 accessibility considerations
+The public policies describe website visits and prelaunch enquiries. Before the app accepts users, complete the separate app-release review and update its policies against actual release behavior.
+
+- [Organization enrollment website handoff](APPLE_ACCOUNT_APPLICATION.md)
+- [App Store release review](APP_STORE_READINESS.md)
+- [Internal app-policy drafts](docs/APP_POLICY_DRAFTS.md)
 
 ## Tech Stack
 
@@ -24,7 +20,7 @@ This is a production-ready Next.js website featuring:
 - **UI Primitives:** Radix UI
 - **Animation:** Framer Motion
 - **Icons:** Lucide React
-- **Deployment:** Static export (Vercel-ready)
+- **Deployment:** Static export (Cloudflare hosting configured by the owner)
 
 ## Getting Started
 
@@ -79,13 +75,11 @@ my-app/
 
 ## Deployment
 
-The project is configured for static export (`output: "export"`). The `dist/` folder contains the static site and can be deployed to Vercel, Netlify, Cloudflare Pages, GitHub Pages, or any static host.
+The project is configured for static export (`output: "export"`). Run `npm run build` to produce the deployment artifact in `dist/`. Its automatic `postbuild` step removes dropped routes from the generated export while preserving their source code. The public pages are `/`, `/legal/privacy/`, and `/legal/terms/`; assets and the error page are retained. The sitemap lists only those three public pages.
 
-### Deploy to Vercel
+Deploy only the resulting `dist/` folder. Do not use `next build` directly, skip npm lifecycle scripts, or publish a development server: those bypass the publication filter. Retained routes remain accessible during `npm run dev`. Configure the static host to serve missing routes as 404s, without a catch-all rewrite to the homepage.
 
-```bash
-npx vercel --prod
-```
+Cloudflare hosting is already configured by the owner. This work does not change hosting settings or publish a deployment.
 
 ## Design System
 
@@ -97,4 +91,4 @@ See [BRAND_GUIDELINES.md](./BRAND_GUIDELINES.md) for colors, typography, voice, 
 
 ## License
 
-© 2026 Talery Inc. All rights reserved.
+© 2026 Talery Private Limited. All rights reserved.

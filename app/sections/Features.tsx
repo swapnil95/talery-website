@@ -24,7 +24,7 @@ export function Features() {
       <Container>
         <ScrollReveal className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-4">
-            Features
+            In development
           </span>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
             Everything You Need To{" "}
@@ -32,7 +32,7 @@ export function Features() {
           </h2>
           <p className="text-lg text-muted-foreground">
             Bring your plans, saved places, travel companions, and shared expenses
-            together. Availability may vary during early access.
+            together. These features are in development and are not yet available to users.
           </p>
         </ScrollReveal>
 

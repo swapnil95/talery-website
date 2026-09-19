@@ -23,9 +23,9 @@ const problems = [
 ];
 
 const solutions = [
-  { icon: BrainCircuit, title: "AI", desc: "Intelligent planning that learns your style" },
-  { icon: Users, title: "Community", desc: "Real experiences from real travelers" },
-  { icon: UserX, title: "Creators", desc: "Curated by travel experts & influencers" },
+  { icon: BrainCircuit, title: "AI", desc: "Planning suggestions guided by your preferences" },
+  { icon: Users, title: "Community", desc: "Tools for sharing travel plans with other people" },
+  { icon: UserX, title: "Discovery", desc: "Keep interesting places together for your next trip" },
   { icon: Sliders, title: "Customization", desc: "Tailor every detail to your taste" },
   { icon: Handshake, title: "Collaboration", desc: "Plan trips together, seamlessly" },
 ];
@@ -41,7 +41,7 @@ export function WhyTalery() {
             <span className="gradient-text">Broken.</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            We built Talery because planning a trip shouldn&apos;t feel like a
+            We are building Talery because planning a trip shouldn&apos;t feel like a
             second job. No more endless tabs, copy-pasted itineraries, or
             one-size-fits-none recommendations.
           </p>

@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/prepare-public-export.mjs",
     "start": "next start",
     "lint": "eslint"
   },

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Talery",
   },
   description:
-    "Discover, create, and share unforgettable travel experiences powered by AI and a global community of creators. Every journey has a story. Tell yours with Talery.",
+    "Talery Private Limited is developing a social travel planning app. Explore planned features and contact us about future early access.",
   keywords: [
     "AI travel planner",
     "social travel",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Talery",
     title: "Talery — AI-Powered Social Travel Platform",
     description:
-      "Discover, create, and share unforgettable travel experiences powered by AI and a global community of creators.",
+      "Explore the travel planning app being developed by Talery Private Limited. Not yet available to users.",
     images: [
       {
         url: "/og-image.svg",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Talery — AI-Powered Social Travel Platform",
     description:
-      "Discover, create, and share unforgettable travel experiences powered by AI and a global community of creators.",
+      "Explore the travel planning app being developed by Talery Private Limited. Not yet available to users.",
     images: ["/og-image.svg"],
     creator: "@talery",
   },
@@ -99,6 +99,8 @@ export default function RootLayout({
                     Registered office: FL. NO. A3 U/G/F BACK SIDE, Property no. 220 KHNO 603,
                     Sangam Vihar, Delhi 110080, India
                   </address>
+                  <p>Contact person: Aditya Dhal</p>
+                  <p>Telephone: <a href="tel:+917008065412" className="hover:text-foreground transition-colors">+91 70080 65412</a></p>
                   <a href="mailto:hr@talery.co" className="inline-block hover:text-foreground transition-colors">hr@talery.co</a>
                 </div>
                 <div className="flex flex-wrap items-center justify-center gap-4">

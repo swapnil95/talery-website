@@ -13,20 +13,20 @@ export function WaitlistCTA() {
           <div className="max-w-3xl mx-auto text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm font-medium mb-6">
               <Sparkles className="h-4 w-4 text-primary" />
-              <span>Request early access</span>
+              <span>Stay informed</span>
             </div>
             <h2 className="text-3xl sm:text-4xl lg:text-6xl font-bold tracking-tight mb-6">
               Join the Future of{" "}
               <span className="gradient-text">Travel</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-              Request access to AI-assisted planning, shared itineraries, and
-              group expense tracking for your next trip.
+              Talery is still in development. Email us if you would like to hear
+              when early access becomes available.
             </p>
 
             <Button size="lg" className="h-14 px-8 group" asChild>
               <a href="mailto:hr@talery.co?subject=Talery%20early%20access%20request">
-                Email for Early Access
+                Register Interest by Email
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
