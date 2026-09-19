@@ -66,7 +66,7 @@ const sections: LegalSection[] = [
     "id": "rights",
     "title": "Access, correction, deletion, and complaints",
     "paragraphs": [
-      "Contact Aditya Dhal at hr@talery.co to request access to, correction of, or deletion of personal information provided to Talery, or to raise a privacy concern. Describe the request and, where possible, write from the address used for your original enquiry. We may ask for proportionate information to verify that we are responding to the right person; do not send identity documents unless we specifically explain why they are needed.",
+      "Contact Talery Private Limited at hr@talery.co to request access to, correction of, or deletion of personal information provided to Talery, or to raise a privacy concern. Describe the request and, where possible, write from the address used for your original enquiry. We may ask for proportionate information to verify that we are responding to the right person; do not send identity documents unless we specifically explain why they are needed.",
       "Depending on the applicable law, you may also have rights to data portability, restriction of processing, objection to processing based on legitimate interests, withdrawal of consent, and complaints to a competent data protection authority. We will respond within the applicable legal period and explain any reason we cannot fulfill a request. This policy does not restrict rights given to you by law.",
       "There is no public Talery app account to delete at this stage. Deleting an email from your own mailbox does not delete the copy sent to us; please contact us if you want that information removed."
     ]

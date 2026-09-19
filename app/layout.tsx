@@ -99,7 +99,6 @@ export default function RootLayout({
                     Registered office: FL. NO. A3 U/G/F BACK SIDE, Property no. 220 KHNO 603,
                     Sangam Vihar, Delhi 110080, India
                   </address>
-                  <p>Contact person: Aditya Dhal</p>
                   <p>Telephone: <a href="tel:+917008065412" className="hover:text-foreground transition-colors">+91 70080 65412</a></p>
                   <a href="mailto:hr@talery.co" className="inline-block hover:text-foreground transition-colors">hr@talery.co</a>
                 </div>

@@ -68,7 +68,7 @@ const sections: LegalSection[] = [
     "id": "disputes",
     "title": "Questions, disputes, and changes",
     "paragraphs": [
-      "For questions or complaints about the website, contact Aditya Dhal at hr@talery.co or at the telephone number below. Please explain the issue so we can investigate and respond. You retain any right to approach a competent court or authority under applicable law, including protected consumer rights where you live.",
+      "For questions or complaints about the website, contact Talery Private Limited at hr@talery.co or at the telephone number below. Please explain the issue so we can investigate and respond. You retain any right to approach a competent court or authority under applicable law, including protected consumer rights where you live.",
       "These terms do not require mandatory arbitration or a class-action waiver. If a provision is unenforceable, the remaining provisions continue to apply to the extent permitted by law.",
       "We may revise these terms when the website or relevant requirements change. We will update the date above and provide appropriate notice of material changes. Changes do not retroactively remove rights arising from earlier events."
     ]

@@ -49,7 +49,6 @@ export function LegalDocument({ title, subtitle, sections }: {
               Property no. 220 KHNO 603<br />
               Sangam Vihar, Delhi 110080, India
             </address>
-            <p className="mb-3 text-muted-foreground">Contact person: Aditya Dhal</p>
             <p className="mb-3 text-muted-foreground">
               Telephone: <a href="tel:+917008065412" className="text-primary underline underline-offset-4">+91 70080 65412</a>
             </p>
